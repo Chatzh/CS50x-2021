@@ -1,0 +1,38 @@
+sort1 uses: Bubble sort
+
+How do you know?: When running the code with 50000 dates it has 16 seconds upper bounds and 3 seconds lower bounds, seems to match the n square and n time complexity.
+
+sort2 uses: Merge sort
+
+How do you know?: When running the code with 50000 dates it takes 2 or 3 seconds every times, seems to match the n times log n time complexity.
+
+sort3 uses: Selection sort
+
+How do you know?: The rest method must be the Selection sort.
+
+
+time ./sort1 random50000.txt
+real    0m16.216s
+user    0m6.305s
+sys     0m0.068s
+
+time ./sort1 reversed50000.txt
+real    0m11.244s
+user    0m4.560s
+sys     0m0.072s
+
+time ./sort1 sorted50000.txt
+real    0m3.249s
+user    0m0.034s
+sys     0m0.067s
+
+
+time ./sort2 random50000.txt
+real    0m3.785s
+user    0m0.051s
+sys     0m0.059s
+
+time ./sort2 reversed50000.txt
+real    0m2.588s
+user    0m0.029s
+sys     0m0.077s
